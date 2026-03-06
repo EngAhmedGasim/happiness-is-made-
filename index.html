@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>جاري التحويل...</title>
+<script>
+
+var messages = [
+"ليش الحلو زعلان افرح يا حبيبي فإنه رمضان ♡",
+"أسال الله ان يكتب لي و لك الخير فيما نسعى♡",
+"كل شي بيد الله فلا تقلق ♡",
+"خليك على ثقة دايما بالله ♡",
+"جمعة مباركة ♡",
+"اكثر من الدعاء فهو صلة قوية مع الكريم ♡"
+];
+
+var randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+var phone = "249116283638";
+
+window.location.href = "https://wa.me/" + phone + "?text=" + encodeURIComponent(randomMessage);
+
+</script>
+</head>
+
+<body style="text-align:center;margin-top:100px;font-size:22px;">
+جاري التحويل...
+</body>
+</html>
