@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Redirect</title>
+</head>
+
+<body>
+
+<script>
+
+var phone = "249116283638"; // ضع رقمك هنا
+
+var messages = [
+"ليش الحلو زعلان افرح يا حبيبي فإنه رمضان ♡",
+"أسال الله ان يكتب لي و لك الخير فيما نسعى ♡",
+"كل شي بيد الله فلا تقلق ♡",
+"خليك على ثقة دايما بالله ♡",
+"جمعة مباركة ♡",
+"اكثر من الدعاء فهو صلة قوية مع الكريم ♡"
+];
+
+var randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+var link = "https://wa.me/" + phone + "?text=" + encodeURIComponent(randomMessage);
+
+setTimeout(function(){
+  window.location.href = link;
+},1000);
+
+</script>
+
+</body>
+</html>
